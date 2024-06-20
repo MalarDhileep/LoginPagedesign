@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <title>Login page</title>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('register');
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            //open the re-enter password page of self
+            function repass(){
+              window.open( "forgetpass.html","_self" );
+              }
+            </script>
+    </head>
+    <body>  
+        <div class="container">             
+          <h2>LOGIN FORM</h2>
+            <div class="imagecontainer">
+                <img class="mainimg" src="login.jpeg" >
+            </div>  <form action="" method="post"></form>
+            <div class="userdetail">
+                   <label>Username</label> 
+                   <input type="text" name="uname" placeholder="Username" required><br>
+                   <label>Password  </label> 
+                   <input type="password" name="pass" placeholder="Password" required> <br>
+                   <button type="submit"  class="logsubmit" name="submit" >SUBMIT</button><br>
+                   <label style="font-size: 15px;"><input type="checkbox" checked="checked" name="remember">Remember Me</label>
+                   <a href="#" class="forget" onclick="repass()">Forget Password</a><br>
+                    <a href="#" onclick="document.getElementById('register').style.display='block'" style="width:auto;font-size: 15px;">
+                            Registration Form</a>
+            </div>
+            </form>
+        </div><!-- Registration Form design -->
+        <div id="register" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">  
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register').style.display='none'" 
+                    class="close" title="Close Modal">&times;</span>
+                  </div>        
+                  <div class="container1"> 
+                    <h2>Registration Form</h2><hr>
+                    <div class="Userinfo">
+                           <label>Username</label> 
+                           <input type="text" name="uname" placeholder="Username" required><br>
+                           <label>Password  </label> 
+                           <input type="password" name="pass" placeholder="Password" required> <br>
+                           <label>Again Password  </label> 
+                           <input type="password" name="pass" placeholder="Password" required> <br>
+                           <label>Email id</label> 
+                           <input type="email" name="email" placeholder="Enter your EMail id" required> <br>
+                           <label>Phone No</label> 
+                           <input type="number" name="no" placeholder="Enter your Phone no" required> <br>
+                           <div>
+                          <button type="button" onclick="document.getElementById('register').style.display='none'" 
+                           class="cancel">Cancel</button>
+                           <button type="submit" class="submit"  style="background-color: green;" name="submit">SUBMIT</button>   
+                           <br>
+                           <label style="font-size: 15px;"><input type="checkbox" checked="checked" name="remember">Remember Me</label><br>    </div>             
+                           
+            </div>
+            
+              </form>
+            </div>
+            
+        </div>
+
+
+    </body>
+</html>

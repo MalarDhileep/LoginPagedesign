@@ -1,0 +1,154 @@
+        /* body{
+            float: Center;
+        } */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        .mainimg{/* Login  page     image */
+            display: block;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+        .imagecontainer{
+            float: Center;          
+            padding: 5px 5px 5px 30%;            
+        }
+        h2{
+            /* text-align: center; */
+            font-family: 'Times New Roman', Times, serif;
+            padding: 0px 5px 5px 30%;   
+            /* font-size: 2px; */
+            /* margin: 10px 5px 5px 30 auto; */
+         }
+        .container{
+            display: block;
+            float: Center;
+            margin-top: 5%;
+            margin-left: 40%;
+            box-shadow: 10px 20px 40px gray;
+            width: 25%;
+            height: 450px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 30px;
+            margin: 1% 4% 4% 35%; 
+        }
+        .userdetail{
+            font-size: 15px;
+            float: center;
+            font-family: 'Times New Roman', Times, serif;
+        } /* all inputbox size */
+        input[type=text], input[type=password],input[type=email], input[type=number] {
+         width: 80%;
+         padding: 7px 18px;
+         margin: 10px 10px 10px;
+         border: 1px solid #ccc;
+         }
+         .logsubmit{
+            background-color: green;
+            color: #fff;
+            padding: 15px 15px;
+            margin: 8px  25%;
+            border: none;
+            width: 40%;
+            border-radius: 30px;  
+         }
+         button:hover{
+            opacity: 0.9;
+         }
+         .forget{
+            font-size: 15px; 
+            float: right;
+         }
+        /* other details */
+        /* Extra styles for the cancel button */
+        .submit{
+            background-color: green;
+            color: #fff;
+            border: none;
+            padding: 13px 13px;
+            border-radius: 30px;     
+        }
+        .cancel {
+           width: auto;
+           color: #fff;
+           border: none;
+           padding: 13px 13px ;
+           margin-left: 35%;
+           border-radius: 30px;
+           background-color: red;
+        }
+        .container1{
+         padding: 20px;
+        }
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 12px 0;
+  position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 0.2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /*Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 30px;
+  margin: 2%  auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+/* .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+} */
+
+/* Change styles for span and cancel button on extra small screens */
+/* @media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancel{
+     width: 100%;
+  }
+} */

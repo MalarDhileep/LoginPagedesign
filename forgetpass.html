@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>HTML Form</title>
+    </head>
+    <style>
+        .container2{
+            display: block;
+            float: center;
+            margin: 3% auto 5% 35%;/* box margin of upside and down site right and left */
+            box-shadow: 10px 20px 30px gray;
+            width: 25%;  /* box width and box height */
+            height: 350px;
+            padding: 40px;
+            border-radius: 30px;
+            /* top down right left */    
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;   
+            padding: 0px 5px 20px 30px;   
+        }
+        .userdetails{
+            font-size: 15px;
+            float: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        input[type=text],input[type=password]{
+            width:80%;
+            padding: 7px 18px;
+            margin: 10px 10px 10px;
+        }
+        .submit{
+            background-color: green;
+            color: white;
+            padding: 13px 13px;
+            margin: 5% 5% 5% 30%;
+            border-radius: 30px;
+            border: none;
+        } button:hover{
+            opacity: 0.9;
+         }
+        .cancel{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 13px 13px;         
+            border-radius: 30px;
+        }
+    </style>
+    <body>
+    <div class="container2">
+        <form><h1> Change Password</h1><hr>
+            <div >
+                <label>Enter Your Email id or Phone no</label>
+                <input type="text" name="email" required>
+            </div>
+            <div>
+                <label>New Password</label>
+                <input type="password" name="password" placeholder="Enter the Password" required><br>
+                <input type="password" name="repassword" placeholder="Re-Enter the New Password" required><br>
+                <button type="submit" class="submit">Submit</button>
+                <button type="submit" class="cancel" onclick="history.back()">Cancel</button>
+            </div>         
+
+        </form>
+    </div>
+    </body>
+</html>
